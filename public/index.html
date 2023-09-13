@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="show-hide-container">
+      <span class="material-icons arrow_downward"> arrow_downward </span>
+    </div>
+    <div class="tools-container scale-tools-container">
+      <span class="material-icons pencil"> border_color </span>
+      <span class="material-icons eraser"> fire_extinguisher </span>
+      <span class="material-icons download"> download </span>
+      <span class="material-icons upload"> upload_file </span>
+      <span class="material-icons sticky"> sticky_note_2 </span>
+      <span class="material-icons redo"> redo </span>
+      <span class="material-icons undo"> undo </span>
+      <span class="material-icons clear_all"> clear_all </span>
+    </div>
+
+    <div class="pencil-widget-container">
+      <div class="pencil-width-container">
+        <input type="range" value="3" min="2" max="10" class="pencil-range" />
+      </div>
+      <div class="pencil-colors-container">
+        <div class="pencil-colors black"></div>
+        <div class="pencil-colors red"></div>
+        <div class="pencil-colors blue"></div>
+        <div class="pencil-colors pink"></div>
+        <div class="pencil-colors yellow"></div>
+        <div class="pencil-colors orange"></div>
+        <div class="pencil-colors purple"></div>
+        <div class="pencil-colors green"></div>
+        <div class="pencil-colors gray"></div>
+      </div>
+    </div>
+    <div class="eraser-widget-container">
+      <input type="range" value="3" min="2" max="10" class="eraser-range" />
+    </div>
+
+    <canvas></canvas>
+    <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="socketConn.js"></script>
+    <script src="tools.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>
